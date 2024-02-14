@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    font-family: Verdana;
+}
+
+header {
+    display: flex;
+}
+
+.lewy,
+.prawy {
+    background-color: #6F79A8;
+    color: white;
+    height: 140px;
+}
+
+.lewy {
+    width: 30%;
+}
+
+.prawy {
+    width: 70%;
+}
+
+
+
+.kalendarz {
+    background-color: #9FA8DA;
+    width: 160px;
+    height: 85px;
+    margin: 5px;
+    border: 1px solid #6F79A8;
+    overflow: hidden;
+    float: left;
+
+}
+
+.kalendarz:hover {
+    background-color: #6F79A8;
+    color: white;
+}
+
+footer {
+    background-color: #6F79A8;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+
+}
