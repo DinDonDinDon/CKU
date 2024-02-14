@@ -1,0 +1,23 @@
+kw1.
+
+SELECT id, imie, nazwisko, rok_urodzenia
+FROM osoby;
+
+
+kw2.
+
+SELECT osoby.id, osoby.imie, osoby.nazwisko, osoby.rok_urodzenia, osoby.opis, osoby.zdjecie,
+hobby.nazwa
+FROM osoby
+JOIN hobby ON osoby.Hobby_id = hobby.id
+WHERE osoby.id = '10';
+
+kw3.
+
+SELECT AVG(rok_urodzenia), MAX(rok_urodzenia), MIN(rok_urodzenia)
+FROM osoby
+
+kw4.
+
+
+UPDATE osoby SET opis = 'filmy' WHERE Hobby_id = '4';
