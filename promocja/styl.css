@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E8C84E;
+    height: 50px;
+    font-size: 130%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.lewy {
+    background-color: #FFB544;
+    height: 500px;
+    width: 40%;
+    font-size: 130%;
+}
+
+.centr {
+    height: 500px;
+    width: 30%;
+    text-align: center;
+}
+
+.prawy {
+    background-color: #FFB544;
+    height: 500px;
+    width: 30%;
+    font-size: 130%;
+    text-align: center;
+}
+
+footer {
+    background-color: #E8C84E;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+}
+
+ul,
+li {
+    padding-top: 30px;
+    background-color: #FFAA00;
+}
+
+img,
+h3 {
+    margin-top: 50px;
+}
+
+form {
+    margin-bottom: 100px;
+}

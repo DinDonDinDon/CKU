@@ -1,0 +1,23 @@
+kw1.
+
+SELECT nazwa FROM towary WHERE promocja = '1';
+
+
+kw2.
+
+SELECT cena FROM towary WHERE nazwa = 'cienkopis';
+
+
+kw3.
+
+
+SELECT dostawcy.nazwa, COUNT(towary.idDostawcy) AS ilość
+FROM dostawcy
+JOIN towary ON dostawcy.id = towary.idDostawcy
+GROUP BY dostawcy.nazwa;
+
+
+kw4.
+
+
+ALTER TABLE dostawcy ADD COLUMN (e_mail text);
