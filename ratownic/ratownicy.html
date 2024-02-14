@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zespoły ratownicze</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+
+<body>
+
+    <header>
+
+        <section class="lewy">
+            <h2>
+                Dodanie zespołu ratowniczego
+            </h2>
+        </section>
+
+        <section class="centr">
+            <p>
+                Kontakt: <br>
+                022 222 11 333
+            </p>
+        </section>
+
+        <section class="prawy">
+            <img src="./obraz.jpg" alt="Ratownicy">
+        </section>
+
+    </header>
+
+    <main>
+        <h3>
+            Dodaj nowy zespół
+        </h3>
+
+        <form action="dodanie.php" method="post">
+            <label>
+                Numer karetki: <br>
+                <input type="number" name="nr"><br>
+            </label>
+            <label>
+                Imię i nazwisko pierwszego
+                ratownika: <br>
+                <input type="text" name="rat1"><br>
+            </label>
+            <label>
+                Imię i nazwisko drugiego
+                ratownika: <br>
+                <input type="text" name="rat2"><br>
+            </label>
+            <label>
+                Imię i nazwisko trzeciego
+                ratownika: <br>
+                <input type="text" name="rat3"><br>
+            </label>
+            <button type="reset">CZYŚĆ</button>
+            <button type="submit">DODAJ</button>
+        </form>
+    </main>
+
+    <footer>
+
+        <section class="flewy">
+            <a href="./kwerendy.txt">Zobacz kwerendy</a>
+        </section>
+
+        <section class="fcentr">
+            <h5>
+                Przypominamy numery alarmowe
+                <ol>
+                    <li>112</li>
+                    <li>999</li>
+                </ol>
+            </h5>
+        </section>
+
+        <section class="fprawy">
+            <p>
+                Autor <br>
+                01234567897
+            </p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

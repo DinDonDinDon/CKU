@@ -1,0 +1,46 @@
+* {
+    font-family: Arial;
+    margin: 0;
+}
+
+header,
+footer {
+    display: flex;
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+}
+
+.lewy,
+.flewy {
+    width: 55%;
+    font-size: 120%;
+}
+
+.centr,
+.fcentr {
+    width: 25%;
+}
+
+.prawy,
+.fprawy {
+    width: 20%;
+    text-align: right;
+}
+
+main {
+    background-color: snow;
+    padding: 70px;
+}
+
+a {
+    border: 2px dotted saddlebrown;
+    background-color: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+
+ol {
+    list-style-type: lower-latin;
+}
