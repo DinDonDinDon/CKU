@@ -1,0 +1,23 @@
+kw1.
+
+SELECT id, tytul, tresc
+FROM ogloszenie
+WHERE kategoria = '1';
+
+
+kw2.
+
+SELECT uzytkownik.telefon
+FROM uzytkownik
+JOIN ogloszenie ON uzytkownik.id = ogloszenie.uzytkownik_id
+WHERE ogloszenie.uzytkownik_id = '1';
+
+
+kw3.
+
+CREATE USER moderator IDENTIFIED BY 'qwerty';
+
+
+kw4.
+
+GRANT DELETE, SELECT ON ogloszenie.* TO moderator; 
