@@ -1,0 +1,26 @@
+kw1.
+
+INSERT INTO czytelnicy (id, imie, nazwisko, kod)
+VALUES
+(NULL, 'Anna', 'Michalak', 'an05mi');
+
+
+kw2.
+
+
+SELECT imie, nazwisko
+FROM czytelnicy;
+
+kw3.
+
+SELECT ksiazki.tytul
+FROM ksiazki
+JOIN autorzy ON ksiazki.id_autor = autorzy.id
+WHERE autorzy.nazwisko = 'Fredro';
+
+
+kw4.
+
+SELECT autorzy.nazwisko, COUNT(ksiazki.id_autor) AS ilosc FROM autorzy
+JOIN ksiazki ON autorzy.id = ksiazki.id_autor 
+GROUP BY ksiazki.id_autor;
