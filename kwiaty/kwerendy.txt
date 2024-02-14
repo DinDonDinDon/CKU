@@ -1,0 +1,29 @@
+kw1.
+
+SELECT nazwa, ulica
+FROM kwiaciarnie
+WHERE miasto = 'Malbork';
+
+
+kw2.
+
+SELECT kwiaciarnie.id_kwiaciarni, COUNT(zamowienia.id_zam)
+FROM kwiaciarnie
+JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_kwiaciarni
+GROUP BY kwiaciarnie.id_kwiaciarni;
+
+kw3.
+
+SELECT kwiaciarnie.nazwa, kwiaciarnie.miasto, zamowienia.kwiaty
+FROM kwiaciarnie
+JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_kwiaciarni
+WHERE zamowienia.data = '2017-01-07';
+
+kw4.
+
+
+CREATE TABLE klienci 
+( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+ imie varchar(15),
+ nazwisko varchar(15),
+ rabat int UNSIGNED);
