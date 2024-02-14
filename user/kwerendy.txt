@@ -1,0 +1,23 @@
+kw1.
+
+SELECT haslo
+FROM uzytkownicy
+WHERE login = 'Justyna';
+
+
+kw2.
+
+SELECT COUNT(*) FROM dane;
+
+kw3.
+
+
+SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie
+FROM uzytkownicy
+JOIN dane ON uzytkownicy.id = dane.id
+WHERE uzytkownicy.login = 'Justyna';
+
+kw4.
+
+
+ALTER TABLE dane ADD COLUMN stanowisko text;
